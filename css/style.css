@@ -38,9 +38,9 @@ main a, #contact input[type='submit'], button {
 }
 /*** HEADER ***/
 header { color: #ffffff;}
-header.home { 
+header { 
     height: 100vh;
-    background: url(../../img/XvR0Hp44XQz2CduiFdhtwgYFM6Dx4Sn3xLSY71uK.jpeg) rgba(50,54,67, 1) no-repeat center top;
+    background: url(../img/banner.jpeg) rgba(50,54,67, 1) no-repeat center top;
     background-size: 100%;
     background-size: cover;
     overflow: hidden;
