@@ -183,8 +183,8 @@ nav ul { text-align: right; }
 #down {
     position: absolute;
     width: 100%;
-    bottom: 1em;
-    font-size: 2em;
+    bottom: 2em;
+    font-size: 2.5em;
 }
 #down a { color: #fff; }
 /*** MAIN ***/
@@ -311,6 +311,8 @@ footer { border-top: 1px solid #444; }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .wrapper { max-width: 540px; }
+    /* */
+    #banner { height: 92vh; }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -331,8 +333,10 @@ footer { border-top: 1px solid #444; }
         padding-left: .5em;
         display: inline-block;
         height: auto;
-        opacity: 1;
         margin-top: .8em;
+        opacity: 1;
+        font-size: 1.1em;
+        font-family: 'Vidaloka', serif;
      }
     /*** MAIN ***/
     /*** Mes travaux ***/
