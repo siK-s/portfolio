@@ -1,0 +1,402 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+#header_top, footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+header, footer { background-color: rgba(50,54,67, 1); }
+.wrapper {
+    max-width: 307px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, p { 
+    margin: 0;
+    font-weight: normal;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a { text-decoration: none; }
+a:focus, button:focus { outline: none; }
+/* button style */
+main a, #contact input[type='submit'], button { 
+    display: inline-block;
+    margin: 1em auto;
+    padding: .75em 2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #c92a2a;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+/*** HEADER ***/
+header { color: #ffffff;}
+header.home { 
+    height: 100vh;
+    background: url(../../img/XvR0Hp44XQz2CduiFdhtwgYFM6Dx4Sn3xLSY71uK.jpeg) rgba(50,54,67, 1) no-repeat center top;
+    background-size: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+header #header_top .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#header_top { background-color: rgba(50,54,67, 1); }
+/*** Logo ***/
+.logo {
+    min-width: 30px;
+    min-height: 30px;
+    padding: 0.5em .6em;
+    border: 1px solid;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.logo h1 {
+    font-family: 'Vidaloka', serif;
+    font-size: 26px;
+}
+/*** Nav ***/
+.logo, nav, ul { display:inline-block; }
+nav a { color: #fff; }
+.nav_link { 
+    height: 0;
+    padding-top: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.animLinkOnMobile {
+    height: 1.5em;
+    padding-top: 1em;
+    opacity: 1;
+}
+nav ul { text-align: right; }
+/*** Mobile nav ***/
+*:before, *:after { box-sizing: border-box; }
+.hamburger {
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 33px;
+    height: 27px;
+    position: relative;
+    top: 14px;
+    transition: all 0.3s linear;
+}
+.hamburger > div {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+}
+.hamburger > div:before {
+    position: absolute;
+    background: inherit;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 0px;
+    left: -1.5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.hamburger > div:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    width: 3px;
+    height: 3px;
+    top: 0px;
+    right: -1.5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.hamburger .pipe1 { top: 0; }
+.hamburger .pipe2 {
+    top: 10px;
+    opacity: 1;
+    transition: all 0.4s ease-out;
+}
+.hamburger .pipe3 { top: 20px; }
+.hamburger .pipe1, .hamburger .pipe3 {
+    transition: transform 0.6s linear;
+}
+.hamburger.clicked {
+    transform: rotate(-90deg);
+    transition: all 0.3s linear;
+}
+.hamburger.clicked .pipe1, .hamburger.clicked .pipe3 {
+    position: absolute;
+    margin: 0;
+    top: 12px;
+    transition: transform 0.6s linear 0.3s;
+}
+.hamburger.clicked .pipe2 {
+    opacity: 0;
+    transition: all 0.4s ease-in 0.3s;
+}
+.hamburger.clicked .pipe1 { transform: rotate(-405deg); }
+.hamburger.clicked .pipe3 { transform: rotate(-315deg); }
+/*** Breadcrumb ***/
+#breadcrumb {
+    border-top : 1px solid #444;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: .875em;
+}
+#breadcrumb a { 
+    color: #fff;
+    font-style: italic;
+}
+/*** Banner ***/
+#banner {
+    height: 90vh;
+    display: grid;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    background: rgb(50,54,67);
+    background:linear-gradient(0deg, rgba(50,54,67,1) 0%, rgba(50,54,67,.9) 50%, rgba(50,54,67,0.33) 100%);
+}
+#banner h2 { 
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 5px;
+}
+#banner h2 i { color:#c92a2a; }
+#banner h2 span { font-style: italic; }
+#banner h3 { letter-spacing: 1px; }
+#down {
+    position: absolute;
+    width: 100%;
+    bottom: 1em;
+    font-size: 2em;
+}
+#down a { color: #fff; }
+/*** MAIN ***/
+main { text-align: center; }
+main img { width: 100%; }
+main h3 { font-family: 'Vidaloka', serif; }
+
+#aPropos, #mesTravaux, #mesCompetences, #contact, main h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+main h3 { font-size: 2em; }
+#mesTravaux, #contact { background-color: rgba(50,54,67, 1); }
+#mesTravaux h3, #contact h3 { color: #fff; }
+/*** A propos ***/
+#aPropos p { margin-bottom: 1em; }
+/*** Mes travaux ***/
+#mesTravaux div article {
+    display: inline-block;
+    margin: 1em auto;
+    position: relative;
+}
+#mesTravaux div article.hidden { 
+    display: none;
+    transition: all 1s;
+}
+#mesTravaux div article h4 { 
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    background-color: rgba(50,54,67, .12);
+}
+#mesTravaux div article h4 a {
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 1em 1.2em;
+    font-size: 1.5em;
+    opacity: .7;
+}
+#mesTravaux div article img { opacity: 1; }
+/*** Mes compétences ***/
+.projet section:first-child div article {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+#mesCompetences .competence {
+    width: 100%;
+    display: inline-block;
+}
+#mesCompetences .icon {
+    display: inline-block;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 1em 1.1em;
+    margin-top: 1em;
+    color: #c92a2a;
+    font-size: 1.5em;
+    border: 1px solid;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+#mesCompetences .competence ul { display: block; }
+#mesCompetences .competence h4 {
+    font-family: 'Vidaloka', serif;
+    text-transform: uppercase;
+    margin: 1.45em auto .7em;
+}
+#mesCompetences li {
+    margin: 0 1em 1em 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid;
+}
+#mesCompetences li:last-child { border-bottom: none;}
+/*** Contactez-moi ***/
+#contact h2, #contact label, input[type='text'], textarea { color: #fff; }
+#contact label {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 0.875em;
+}
+#contact label, #contact input {
+    display: inline-block;
+    width: 80%;
+    padding: .5em 1em;
+}
+#contact textarea {
+    min-height: 90px;
+    width: 81.5%;
+    margin-bottom: 1em;
+    padding: .5em;
+    resize: none;
+}
+#contact input[type='submit'], button {
+    width: auto;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+input, textarea {
+    background: transparent;
+    border: 1px solid #dedede;
+    font-family: 'Open Sans', sans-serif;
+}
+fieldset { 
+    border: none;
+    padding: 0;
+}
+/*** FOOTER ***/
+footer { border-top: 1px solid #444; }
+/*** Mentions légales ***/
+#mentionsLegales {
+    text-align: center;
+    font-size: .875em;
+    color: #fff;
+}
+/***************************************************/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .wrapper { max-width: 540px; }
+    /*** HEADER ***/
+    /*** Logo ***/
+    /*** Nav ***/
+    /*** Banner ***/
+    /*** MAIN ***/
+    /*** A propos ***/
+    /*** Mes travaux ***/
+    /*** Mes compétences ***/
+    /*** Contactez-moi ***/
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .wrapper { max-width: 720px;}
+    /*** HEADER ***/
+    /*** Logo ***/
+    /*** Nav ***/
+    /*** Banner ***/
+    /*** MAIN ***/
+    /*** A propos ***/
+    /*** Mes travaux ***/
+    #mesTravaux div article h4 a { font-size: 3em; }
+    /*** Mes compétences ***/
+    /*** Contactez-moi ***/
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .wrapper { max-width: 960px;}
+    /*** HEADER ***/
+    /*** Logo ***/
+    /*** Nav ***/
+    #navBar { display: none; }
+    .nav_link {
+        padding-right: .5em;
+        padding-left: .5em;
+        display: inline-block;
+        height: auto;
+        opacity: 1;
+        margin-top: .8em;
+     }
+    /*** Banner ***/
+    /*** MAIN ***/
+    /*** A propos ***/
+    /*** Mes travaux ***/
+    #mesTravaux div article {
+        width: 45%;
+        margin:1em;
+        cursor: pointer;
+    }
+    #mesTravaux div article h4 a {
+        font-size: 2em;
+        top: 70px;
+        opacity: 0;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s; 
+    }
+    #mesTravaux div article h4, #mesTravaux div article img {
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+    #mesTravaux div article h4:hover {
+        background-color: rgba(50,54,67, .3);
+    }
+    #mesTravaux div article:hover img { opacity: .7; }
+    #mesTravaux div article h4:hover a { 
+        top:0;
+        opacity: 1;
+    }
+    /*** Mes compétences ***/
+    /*** Contactez-moi ***/
+    #mesCompetences .competence { width: 30%; }
+    #contact label { text-align: left; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .wrapper { max-width: 1140px; }
+    /*** HEADER ***/
+    /*** Logo ***/
+    /*** Nav ***/
+    /*** Banner ***/
+    /*** MAIN ***/
+    /*** A propos ***/
+    /*** Mes travaux ***/
+    /*** Mes compétences ***/
+    /*** Contactez-moi ***/
+}
