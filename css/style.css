@@ -311,36 +311,19 @@ footer { border-top: 1px solid #444; }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .wrapper { max-width: 540px; }
-    /*** HEADER ***/
-    /*** Logo ***/
-    /*** Nav ***/
-    /*** Banner ***/
-    /*** MAIN ***/
-    /*** A propos ***/
-    /*** Mes travaux ***/
-    /*** Mes compétences ***/
-    /*** Contactez-moi ***/
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .wrapper { max-width: 720px;}
-    /*** HEADER ***/
-    /*** Logo ***/
-    /*** Nav ***/
-    /*** Banner ***/
     /*** MAIN ***/
-    /*** A propos ***/
     /*** Mes travaux ***/
     #mesTravaux div article h4 a { font-size: 3em; }
-    /*** Mes compétences ***/
-    /*** Contactez-moi ***/
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .wrapper { max-width: 960px;}
     /*** HEADER ***/
-    /*** Logo ***/
     /*** Nav ***/
     #navBar { display: none; }
     .nav_link {
@@ -351,9 +334,7 @@ footer { border-top: 1px solid #444; }
         opacity: 1;
         margin-top: .8em;
      }
-    /*** Banner ***/
     /*** MAIN ***/
-    /*** A propos ***/
     /*** Mes travaux ***/
     #mesTravaux div article {
         width: 45%;
@@ -381,7 +362,6 @@ footer { border-top: 1px solid #444; }
         top:0;
         opacity: 1;
     }
-    /*** Mes compétences ***/
     /*** Contactez-moi ***/
     #mesCompetences .competence { width: 30%; }
     #contact label { text-align: left; }
@@ -390,13 +370,4 @@ footer { border-top: 1px solid #444; }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .wrapper { max-width: 1140px; }
-    /*** HEADER ***/
-    /*** Logo ***/
-    /*** Nav ***/
-    /*** Banner ***/
-    /*** MAIN ***/
-    /*** A propos ***/
-    /*** Mes travaux ***/
-    /*** Mes compétences ***/
-    /*** Contactez-moi ***/
 }
