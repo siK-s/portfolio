@@ -23,7 +23,7 @@ ul {
     list-style-type: none;
 }
 a { text-decoration: none; }
-a:focus, button:focus { outline: none; }
+a:focus { outline: none; }
 /* button style */
 main a, #contact input[type='submit'], button { 
     display: inline-block;
@@ -75,7 +75,9 @@ nav a { color: #fff; }
     padding-top: 0;
     opacity: 0;
     overflow: hidden;
-    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;  
 }
 .animLinkOnMobile {
     height: 1.5em;
@@ -92,6 +94,8 @@ nav ul { text-align: right; }
     height: 27px;
     position: relative;
     top: 14px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .hamburger > div {
@@ -209,6 +213,8 @@ main h3 { font-size: 2em; }
 }
 #mesTravaux div article.hidden { 
     display: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
     transition: all 1s;
 }
 #mesTravaux div article h4 { 
@@ -311,7 +317,8 @@ footer { border-top: 1px solid #444; }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .wrapper { max-width: 540px; }
-    /* */
+    /*** HEADER ***/
+    /*** Banner ***/
     #banner { height: 92vh; }
 }
 
