@@ -224,6 +224,7 @@ main h3 { font-size: 2em; }
     height: 100%;
     display: grid;
     align-items: center;
+    align-content: center;
     background-color: rgba(50,54,67, .12);
 }
 #mesTravaux div article h4 a {
