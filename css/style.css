@@ -187,7 +187,7 @@ nav ul { text-align: right; }
 #down {
     position: absolute;
     width: 100%;
-    bottom: 2em;
+    bottom: 2.5em;
     font-size: 2em;
 }
 #down a { color: #fff; }
