@@ -343,8 +343,10 @@ footer { border-top: 1px solid #444; }
         height: auto;
         margin-top: .8em;
         opacity: 1;
+        /*
         font-size: 1.1em;
         font-family: 'Vidaloka', serif;
+        */
      }
     /*** MAIN ***/
     /*** Mes travaux ***/
