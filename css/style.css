@@ -273,10 +273,11 @@ main h3 { font-size: 2em; }
 #mesCompetences li:last-child { border-bottom: none;}
 /*** Contactez-moi ***/
 #contact h2, #contact label, input[type='text'], textarea { color: #fff; }
+#contact label, input[type='text'], textarea { font-size: 1em; }
 #contact label {
     display: inline-block;
     margin-top: 6px;
-    font-size: 0.875em;
+    /*font-size: 0.875em;*/
 }
 #contact label, #contact input {
     display: inline-block;
