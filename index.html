@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -220,27 +220,27 @@
                 <form action="https://formspree.io/atayisika@gmail.com" method="POST">
                     <fieldset>
                         <div>
-                            <label for="name">Nom</label>
-                            <input type="text" name="lastName">
+                            <label for="lastName">Nom</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Votre nom" required>
                         </div>
                         <div>
-                            <label for="">Prénom(s)</label>
-                            <input type="text" name="firstName">
+                            <label for="firstName">Prénom(s)</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Votre prénom">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
-                            <label for="">Adresse mail</label>
-                            <input type="text" name="email" placeholder="email@johndoe.com">
+                            <label for="email">Adresse mail</label>
+                            <input type="text" name="email" id="email" placeholder="email@exemple.com" required>
                         </div>
                         <div>
-                            <label for="">Téléphone</label>
-                            <input type="text" name="tel" placeholder="">
+                            <label for="tel">Téléphone</label>
+                            <input type="text" name="tel" id="tel" placeholder="Votre Téléphone">
                         </div>
                     </fieldset>
                     <fieldset>
-                        <label for="">Votre message</label>
-                        <textarea name="message" placeholder="Veuillez saisir votre message ici"></textarea>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" placeholder="Veuillez saisir votre message ici"></textarea>
                     </fieldset>
                     <button>Envoyez</button>
                 </form>
